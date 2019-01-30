@@ -2,4 +2,4 @@ This project includes a method combineLetter which takes two integer array and t
 If any integer exceeds the length of the string which it's been mapped, this is an out of bound error.
 Parameter strings cannot be empty.
 Any char to be added to combined string must be a letter.
- 
+[![Build Status](https://travis-ci.org/ahsennur/myDemoApp.svg?branch=master)](https://travis-ci.org/ahsennur/myDemoApp) 
