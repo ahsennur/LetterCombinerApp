@@ -1,5 +1,7 @@
 package com.mycompany.app;
 
+import java.util.ArrayList;
+
 import junit.framework.Test;
 
 import junit.framework.TestCase;
@@ -41,35 +43,66 @@ public class AppTest
     }
     
     public void testCombined(){
-    	int[] a1={7,2,1};
-    	int[] a2={3,5,2};
-    	String s=App.combineLetters(a1,a2,"teststring1","teststring2");
+    	ArrayList<Integer> l1 = new ArrayList<>();
+    	l1.add(7);
+    	l1.add(2);
+    	l1.add(1);
+     	ArrayList<Integer> l2 = new ArrayList<>();
+    	l2.add(3);
+    	l2.add(5);
+    	l2.add(2);
+
+    	String s=App.combineLetters(l1,l2,"teststring1","teststring2");
     	assertEquals(s,"retsse");
     }
     
     //tests any integer exceedes string's length
     public void testOutofBound(){
-    	int[] a1={13,2,1};
-    	int[] a2={3,5,2};
-    	String s=App.combineLetters(a1,a2,"teststring1","teststring2");
+    	ArrayList<Integer> l1 = new ArrayList<>();
+    	l1.add(13);
+    	l1.add(2);
+    	l1.add(1);
+     	ArrayList<Integer> l2 = new ArrayList<>();
+    	l2.add(3);
+    	l2.add(5);
+    	l2.add(2);
+    	String s=App.combineLetters(l1,l2,"teststring1","teststring2");
     	assertEquals(s,"out of the string bounds!");
     }
     public void testEmptyString(){
-    	int[] a1={7,2,1};
-    	int[] a2={3,5,2};
-    	String s=App.combineLetters(a1,a2,"","teststring2");
+    	ArrayList<Integer> l1 = new ArrayList<>();
+    	l1.add(7);
+    	l1.add(2);
+    	l1.add(1);
+     	ArrayList<Integer> l2 = new ArrayList<>();
+    	l2.add(3);
+    	l2.add(5);
+    	l2.add(2);
+    	String s=App.combineLetters(l1,l2,"","teststring2");
     	assertEquals(s,"empty string!");
     }
     public void testNonLetterChar(){
-    	int[] a1={7,2,1};
-    	int[] a2={3,5,2};
-    	String s=App.combineLetters(a1,a2,"!!!!!!!!!","teststring2");
+    	ArrayList<Integer> l1 = new ArrayList<>();
+    	l1.add(7);
+    	l1.add(2);
+    	l1.add(1);
+     	ArrayList<Integer> l2 = new ArrayList<>();
+    	l2.add(3);
+    	l2.add(5);
+    	l2.add(2);
+    	String s=App.combineLetters(l1,l2,"!!!!!!!!!","teststring2");
     	assertEquals(s,"non letter char!");
     }
     public void testZerosIgnored(){
-    	int[] a1={0,0,0};
-    	int[] a2={0,0,0};
-    	String s=App.combineLetters(a1,a2,"teststring1","teststring2");
+    	ArrayList<Integer> l1 = new ArrayList<>();
+    	l1.add(0);
+    	l1.add(0);
+    	l1.add(0);
+     	ArrayList<Integer> l2 = new ArrayList<>();
+    	l2.add(0);
+    	l2.add(0);
+    	l2.add(0);
+    	String s=App.combineLetters(l1,l2,"teststring1","teststring2");
     	assertEquals(s,"");
     }
 }
