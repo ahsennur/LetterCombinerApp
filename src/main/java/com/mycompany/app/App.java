@@ -54,6 +54,7 @@ public class App
         	if(a2.get(i)==0)
         		continue;
         	
+        	
         	else if(a2.get(i)>s2.length()){
         
         		return "out of the string bounds!";
