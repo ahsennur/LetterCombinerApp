@@ -3,3 +3,4 @@ If any integer exceeds the length of the string which it's been mapped, this is 
 Parameter strings cannot be empty.
 Any char to be added to combined string must be a letter.
 [![Build Status](https://travis-ci.org/ahsennur/myDemoApp.svg?branch=master)](https://travis-ci.org/ahsennur/myDemoApp) 
+https://sleepy-basin-49574.herokuapp.com/compute
